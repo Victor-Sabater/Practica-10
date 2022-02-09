@@ -18,7 +18,7 @@
                 <h1>Accede a tu area Clientes</h1>
                 <h3>Elige a tu documneto</h3>
                 <p>
-                    <input type="radio" name="Dni" value="Dni">Dni o Tarejeta de Residente <br>
+                    <input type="radio" name="Dni" value="Dni">Dni o Tarjeta de Residente <br>
                     <input type="radio" name="Pasaporte" value="Pasaporte">Pasaporte
                 </p>
 
@@ -59,14 +59,69 @@
                 <H1>Empieza creando tu usuario</H1>
 
                 <p>
-                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre (como sale en el DNI)">  
+                    <input type="text" name="Nombre" id="nombre" placeholder="Nombre (como sale en el DNI)" size="48">  
                 </p>
 
                 <p>
                     <input type="text" name="apellido" id="apellido" placeholder="1erApellido(Como sale en el DNI)"> <input type="text" name="2oapellido" id="2oapellido" placeholder="2o apellido (Como sale en el DNI)">
                 </p>
 
+                <p>
+                    <select name="Documento" id="Documento">
+                        <optgroup label="Tipo de Documento">
+                            <option value="1">DNI</option>
+                            <option value="2">NIF</option>
+                            <option value="3">CERT.AEAT</option>
+                        </optgroup>
+                    </select>
+                    <input type="text" name="numero documento" id="numero documento" placeholder="Numero de Documento"> 
+                
+                </p>
+                <input type="tel" name="telefono" placeholder="Movil">
+                <input type="email" name="email" placeholder="Email">
 
+
+                <p>
+
+                </p>
+            </form>
+            <hr>
+            <form action="Formulario 3" method="get">
+                <h1>¿Eres nuevo?</h1>
+                <p>Registrate para guardar tu informacion y hacer tus pedidos de forma mas facil y rapida</p>
+
+                <p>
+                    Email <br>
+                    <input type="email" name="email" id="Email" placeholder="Introduce tu email">
+                </p>
+
+                <p>
+                    Telefono <br>
+                    <input type="tel" name="telf" id="telefono" placeholder="Tu telefono">
+                
+                </p>
+
+                <p>
+                    Contraseña <br>
+                    <input type="password" name="pass" id="pass" placeholder="Introduce tu Contraseña">
+                </p>
+
+                <p>
+                    Introduce tu Contraseña <br>
+                    <input type="password" name="pass" id="pass" placeholder="Confirmar Contraseña">
+                
+                </p>
+
+                <input type="checkbox" name="Politica" id="He leido y acepto Politica de privacidad">
+                <label for="Politica">He leido y acepto <a href="https://www.google.es/">Politica de privacidad</label></a>
+
+               <br> <input type="checkbox" name="Comerciales" id="Comerciales"> 
+                <label for="Comerciales">Si, acepto recibir comunicaciones comerciales y ofertas personalizadas segun mi perfil.</label>
+
+
+                <p>
+                    <input type="submit" value="Crea tu cuenta">
+                </p>
 
 
 
@@ -80,8 +135,6 @@
 
 
             </form>
-
-             
         </section>
     </main>
 
